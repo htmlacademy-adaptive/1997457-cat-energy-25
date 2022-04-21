@@ -1,0 +1,68 @@
+.visually-hidden {
+  position: absolute;
+  width: 0px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"), url("../fonts/Oswald-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.page {
+  margin: 0;
+  font-family: "Oswald", "sans-serif", "Big Caslon";
+  min-height: 100%;
+}
+.page .page__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 100%;
+  flex-wrap: wrap;
+  min-height: 65px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-header .main-header__logo-link {
+  margin-right: 56px;
+}
+.main-header .main-header__title-link {
+  margin-right: auto;
+}
+.main-header .main-header__menu-opener {
+  width: 24px;
+  height: 16px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+/*# sourceMappingURL=style.css.map */
