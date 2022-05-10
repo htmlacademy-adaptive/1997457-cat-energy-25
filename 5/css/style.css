@@ -76,6 +76,8 @@ body {
   --mobile-width: 320px;
   --mobile-padding: 20px;
   --tablet-padding: 30px;
+  --tablet-form-l-padding: 70px;
+  --tablet-form-r-padding: 65px;
   --desktop-padding: 110px;
 }
 
@@ -110,6 +112,9 @@ body {
   padding-top: 10px;
   padding-left: var(--mobile-padding);
   padding-right: var(--mobile-padding);
+  color: var(--default-black);
+  font-size: 18px;
+  line-height: 1;
 }
 .main-header .main-header__logo-link {
   margin-right: 56px;
@@ -127,24 +132,15 @@ body {
 }
 .main-header .main-header__index-link {
   display: none;
-  font-size: 18px;
-  line-height: 1;
   text-transform: uppercase;
-  color: var(--default-black);
 }
 .main-header .main-header__catalog-link {
   display: none;
-  font-size: 18px;
-  line-height: 1;
   text-transform: uppercase;
-  color: var(--default-black);
 }
 .main-header .main-header__form-link {
   display: none;
-  font-size: 18px;
-  line-height: 1;
   text-transform: uppercase;
-  color: var(--default-black);
 }
 @media (min-width: 768px) {
   .main-header {
@@ -173,6 +169,9 @@ body {
   .main-header .main-header__form-link {
     display: block;
   }
+  .main-header .header-black {
+    color: var(--default-black);
+  }
 }
 @media (min-width: 1440px) {
   .main-header {
@@ -180,6 +179,9 @@ body {
     padding-left: var(--desktop-padding);
     padding-right: var(--desktop-padding);
     min-height: 76px;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--default-white);
   }
   .main-header .main-header__logo-link {
     margin-right: 14px;
@@ -195,26 +197,17 @@ body {
     z-index: 1;
     display: block;
     margin-right: 35px;
-    font-size: 20px;
-    line-height: 30px;
-    color: var(--default-white);
   }
   .main-header .main-header__catalog-link {
     position: relative;
     z-index: 1;
     display: block;
     margin-right: 32px;
-    font-size: 20px;
-    line-height: 30px;
-    color: var(--default-white);
   }
   .main-header .main-header__form-link {
     position: relative;
     z-index: 1;
     display: block;
-    font-size: 20px;
-    line-height: 30px;
-    color: var(--default-white);
   }
 }
 
@@ -228,11 +221,9 @@ body {
 .motivation {
   position: relative;
   width: 100%;
-  background-image: url("../../img/mobile/index/motivation-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 302px;
-  z-index: 0;
   padding-top: 27px;
+  text-align: center;
+  color: var(--default-white);
 }
 .motivation .motivation__title {
   margin: 0;
@@ -241,8 +232,6 @@ body {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
-  color: var(--default-white);
   margin-bottom: 25px;
 }
 .motivation .motivation__text {
@@ -253,8 +242,6 @@ body {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  text-align: center;
-  color: var(--default-white);
   margin-bottom: 302px;
 }
 .motivation .motivation__choose-button {
@@ -270,12 +257,30 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+.motivation .motivation__decor {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 302px;
+  background-image: url("../../img/mobile/index/motivation-background.jpg");
+}
+.motivation .motivation__decor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--green1);
+}
 @media (min-width: 768px) {
   .motivation {
     padding-top: 62px;
     background-image: none;
     padding-left: var(--tablet-padding);
     padding-right: var(--tablet-padding);
+    color: var(--default-black);
+    text-align: start;
   }
   .motivation .motivation__title {
     position: relative;
@@ -283,20 +288,16 @@ body {
     font-weight: 400;
     font-size: 60px;
     line-height: 1;
-    color: var(--default-black);
     margin-bottom: 41px;
     width: 414px;
     margin-left: 97px;
     min-height: 120px;
-    text-align: left;
   }
   .motivation .motivation__text {
     position: static;
     font-size: 20px;
     line-height: 1;
     text-transform: uppercase;
-    color: var(--default-black);
-    text-align: start;
     margin-left: 97px;
     margin-bottom: 49px;
   }
@@ -306,46 +307,29 @@ body {
     margin-left: 91px;
     margin-bottom: 526px;
   }
+  .motivation .motivation__decor {
+    display: none;
+  }
 }
 @media (min-width: 1440px) {
-  .motivation .motivation__text::before {
-    content: "";
+  .motivation .motivation__decor {
+    display: block;
     position: absolute;
-    background-image: url("../../img/desktop/index/motivation-background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 1044px;
-    height: 694px;
-    z-index: 0;
-    top: -76px;
-    right: -324px;
-    left: auto;
-  }
-}
-
-.motivation::before {
-  content: "";
-  position: absolute;
-  background-color: var(--green1);
-  width: 320px;
-  height: 302px;
-  inset: 0;
-  z-index: 0;
-}
-@media (min-width: 768px) {
-  .motivation::before {
-    content: none;
-  }
-}
-@media (min-width: 1440px) {
-  .motivation::before {
-    content: "";
     top: -76px;
     right: 0;
     left: auto;
     width: 720px;
     height: 694px;
-    z-index: 1;
+    background-image: url("../../img/desktop/index/motivation-background.png");
+  }
+  .motivation .motivation__decor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--green1);
   }
 }
 
@@ -621,14 +605,24 @@ body {
   padding: 0 20px;
   padding-top: 25px;
   padding-bottom: 40px;
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
 }
 .example .example__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
+}
+.example .example__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.example .example__abstract {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .example .example__text {
   font-family: var(--arial);
@@ -641,7 +635,6 @@ body {
 }
 .example .example__statistic {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .example .example__statistic-weight {
@@ -681,6 +674,7 @@ body {
   margin-bottom: 40px;
 }
 .example .example__slider-list {
+  position: relative;
   padding: 0;
   margin: 0 auto;
 }
@@ -751,6 +745,14 @@ body {
   .example .example__text {
     margin-bottom: 69px;
   }
+  .example .example__content {
+    flex-direction: row;
+  }
+  .example .example__abstract {
+    flex-direction: column;
+    width: 436px;
+    margin-right: 193px;
+  }
   .example .example__statistic {
     margin-bottom: 55px;
   }
@@ -780,10 +782,7 @@ body {
     line-height: 20px;
   }
   .example .example__slider-list {
-    grid-column: 2/3;
-    grid-row: 1/4;
     padding: 0;
-    margin: 0 auto;
     min-height: 576px;
     margin-bottom: 55px;
   }
@@ -1292,6 +1291,25 @@ body {
   text-transform: lowercase;
   color: var(--default-black);
 }
+@media (min-width: 768px) {
+  .questionnaire {
+    padding-top: 65px;
+    padding-left: var(--tablet-form-l-padding);
+    padding-right: var(--tablet-form-r-padding);
+  }
+  .questionnaire .questionnaire__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: var(--default-black);
+    margin-bottom: 54px;
+  }
+  .questionnaire .questionnaire__text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    width: 323px;
+  }
+}
 
 .form {
   font-size: 16px;
@@ -1340,5 +1358,48 @@ body {
   row-gap: 13px;
   min-width: 277px;
   min-height: 115px;
+}
+@media (min-width: 768px) {
+  .form .form__characteristics {
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 72px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .form .form__name-text {
+    width: 53px;
+  }
+  .form .form__name {
+    width: 567px;
+  }
+  .form .form__weight-text {
+    width: 84px;
+  }
+  .form .form__weight {
+    width: 536px;
+  }
+  .form .form__age-text {
+    width: 120px;
+  }
+  .form .form__age {
+    width: 497px;
+  }
+  .form .form__goal {
+    padding: 0;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 25px;
+    padding-left: 27px;
+  }
+  .form .form__goal-wrapper {
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 13px;
+    padding-bottom: 25px;
+    margin-bottom: 75px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
