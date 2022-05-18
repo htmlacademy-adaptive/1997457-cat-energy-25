@@ -1509,7 +1509,7 @@ body {
   margin-bottom: 18px;
 }
 .products .products__more-button {
-  min-width: 280px;
+  width: 100%;
   min-height: 40px;
   margin-bottom: 25px;
   padding: 0;
@@ -1630,7 +1630,9 @@ body {
     padding: 10px 93px;
   }
   .products .products__product-more {
-    padding-top: 242px;
+    align-self: end;
+    height: 83.9530332681%;
+    padding-top: 160px;
     padding-bottom: 38px;
   }
   .products .products__product-more::before, .products .products__product-more::after {
@@ -1659,7 +1661,7 @@ body {
   .products {
     padding: 0 var(--desktop-padding);
     padding-top: 74px;
-    padding-bottom: 75px;
+    padding-bottom: 0;
   }
   .products .products__title {
     margin-bottom: 84px;
@@ -1670,13 +1672,13 @@ body {
     column-gap: 80px;
   }
   .products .products__product-cell {
-    padding: 0;
-    padding-bottom: 40px;
     min-height: 511px;
+    padding: 0 30px;
+    padding-bottom: 40px;
   }
   .products .products__table {
     padding: 0;
-    width: 180px;
+    width: 100%;
     row-gap: 0;
     display: flex;
     flex-direction: column;
@@ -1686,25 +1688,44 @@ body {
     min-height: 100%;
   }
   .products .products__name {
-    width: 145px;
-    margin: 0 auto;
     margin-bottom: 21px;
   }
   .products .products__parameters {
-    width: 169px;
+    width: 93.8888888889%;
     margin: 0 auto;
-    margin-bottom: auto;
+    margin-bottom: 33px;
     justify-content: space-between;
+  }
+  .products .products__mass {
+    position: relative;
+  }
+  .products .products__mass::after {
+    width: 169px;
+    left: 0;
+    bottom: -9px;
+  }
+  .products .products__taste::after {
+    width: 169px;
+    left: 0;
+    bottom: -9px;
+  }
+  .products .products__price::after {
+    width: 169px;
+    left: 0;
+    bottom: -9px;
   }
   .products .products__button {
     padding: 10px 53px;
   }
   .products .products__product-more {
-    width: 245px;
+    align-self: end;
+    height: 431px;
+    box-shadow: 0 2px #f2f2f2 inset;
+    padding: 0 38px;
     padding-top: 160px;
+    padding-bottom: 40px;
   }
   .products .products__product-text {
-    width: 134px;
     line-height: 22px;
     margin-bottom: 23px;
   }
@@ -1713,9 +1734,8 @@ body {
     margin-bottom: 87px;
   }
   .products .products__more-button {
-    width: 169px;
+    width: 100%;
     min-height: 40px;
-    margin-bottom: 41px;
   }
 }
 
@@ -1838,7 +1858,7 @@ body {
   z-index: 0;
   background-image: url("../../img/mobile/catalog/additional-background.jpg");
   background-repeat: no-repeat;
-  min-width: 280px;
+  width: 280px;
   padding-top: 187px;
   padding-bottom: 35px;
 }
@@ -1909,6 +1929,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     padding-bottom: 69px;
+    box-shadow: 1px var(--grey3) inset;
   }
   .additional .additional__card {
     min-width: 282px;
@@ -1969,7 +1990,16 @@ body {
   .additional {
     margin: 0;
     padding: 0 var(--desktop-padding);
+    padding-top: 76px;
     padding-bottom: 86px;
+  }
+  .additional::before {
+    width: 957px;
+    top: 100px;
+  }
+  .additional::after {
+    width: 70px;
+    top: 100px;
   }
   .additional .additional__title {
     margin-bottom: 81px;
@@ -1979,35 +2009,49 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
   }
   .additional .additional__content-card {
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 896px;
+    width: 71.2295081967%;
     margin-bottom: 0;
+    box-shadow: none;
   }
   .additional .additional__card {
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
     width: 100%;
-    min-height: 72px;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
   }
   .additional .additional__name {
     margin-bottom: 0;
   }
   .additional .additional__composition {
     margin: 0;
+    margin-right: 38px;
   }
   .additional .additional-button {
     padding: 7px 26px;
     margin: 0;
   }
   .additional .additional__gift {
+    padding: 0;
     margin: 0;
-    width: 245px;
+    width: 20.0819672131%;
     padding-top: 184px;
     margin-bottom: 0;
+    background-image: url("../../img/desktop/catalog/gift-background.png");
+    background-size: 245px 289px;
+  }
+  .additional .additional__gift::before {
+    width: 100%;
+    height: auto;
   }
   .additional .additional__gift-title {
     width: 161px;
