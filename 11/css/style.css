@@ -1800,35 +1800,41 @@ input::-webkit-inner-spin-button {
   grid-row-start: 1;
   grid-row-end: 3;
   justify-self: center;
-  align-self: end;
 }
 .products .products__chicken-500 {
   width: 68px;
   height: 78px;
+  margin-top: 13px;
 }
 .products .products__chicken-1000 {
   width: 84px;
   height: 100px;
+  margin-top: 11px;
 }
 .products .products__fish-500 {
   width: 68px;
   height: 78px;
+  margin-top: 27px;
 }
 .products .products__fish-1000 {
   width: 84px;
   height: 100px;
+  margin-top: 11px;
 }
 .products .products__buckwheat-500 {
   width: 68px;
   height: 78px;
+  margin-top: 30px;
 }
 .products .products__buckwheat-1000 {
   width: 84px;
   height: 100px;
+  margin-top: 12px;
 }
 .products .products__rice-500 {
   width: 72px;
   height: 84px;
+  margin-top: 24px;
 }
 .products .products__name {
   display: block;
@@ -2011,9 +2017,49 @@ input::-webkit-inner-spin-button {
     justify-content: flex-start;
   }
   .products .products__image-wrapper {
+    align-self: auto;
+    justify-self: auto;
     position: relative;
     z-index: 1;
     margin-bottom: auto;
+  }
+  .products .products__image {
+    width: 100%;
+  }
+  .products .products__chicken-500 {
+    width: 161px;
+    height: 172px;
+    margin-top: 36px;
+  }
+  .products .products__chicken-1000 {
+    width: 168px;
+    height: 206px;
+    margin-top: 8px;
+  }
+  .products .products__fish-500 {
+    width: 163px;
+    height: 174px;
+    margin-top: 34px;
+  }
+  .products .products__fish-1000 {
+    width: 168px;
+    height: 200px;
+    margin-top: 8px;
+  }
+  .products .products__buckwheat-500 {
+    width: 161px;
+    height: 171px;
+    margin-top: 37px;
+  }
+  .products .products__buckwheat-1000 {
+    width: 168px;
+    height: 200px;
+    margin-top: 8px;
+  }
+  .products .products__rice-500 {
+    width: 163px;
+    height: 174px;
+    margin-top: 34px;
   }
   .products .products__name {
     margin: 0;
@@ -2123,6 +2169,41 @@ input::-webkit-inner-spin-button {
     margin: 0 auto;
     justify-content: flex-start;
     min-height: 100%;
+  }
+  .products .products__chicken-500 {
+    width: 161px;
+    height: 172px;
+    margin-top: 28px;
+  }
+  .products .products__chicken-1000 {
+    width: 172px;
+    height: 202px;
+    margin-top: 0px;
+  }
+  .products .products__fish-500 {
+    width: 163px;
+    height: 174px;
+    margin-top: 26px;
+  }
+  .products .products__fish-1000 {
+    width: 172px;
+    height: 196px;
+    margin-top: 0px;
+  }
+  .products .products__buckwheat-500 {
+    width: 161px;
+    height: 171px;
+    margin-top: 29px;
+  }
+  .products .products__buckwheat-1000 {
+    width: 172px;
+    height: 196px;
+    margin-top: 0px;
+  }
+  .products .products__rice-500 {
+    width: 163px;
+    height: 174px;
+    margin-top: 26px;
   }
   .products .products__name {
     margin-bottom: 21px;
@@ -2317,6 +2398,13 @@ input::-webkit-inner-spin-button {
   margin: 0 auto;
   top: 59px;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .additional .additional__gift {
+    background-image: url("../../img/mobile/catalog/additional-background2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 .additional .additional__gift-title {
   position: relative;
   margin: 0 auto;
@@ -2335,6 +2423,7 @@ input::-webkit-inner-spin-button {
     margin: 0;
     padding: 0 var(--tablet-padding);
     padding-top: 68px;
+    padding-bottom: 93px;
   }
   .additional::before {
     width: 328px;
@@ -2404,11 +2493,12 @@ input::-webkit-inner-spin-button {
     padding: 7px 220px;
   }
   .additional .additional__gift {
+    background-image: url("../../img/tablet/catalog/additional-background-tablet.png");
     background-size: 707px 200px;
     margin: 0;
     width: 100%;
     padding-top: 71px;
-    padding-bottom: 35px;
+    padding-bottom: 0;
     padding-left: 422px;
   }
   .additional .additional__gift::before {
@@ -2420,6 +2510,14 @@ input::-webkit-inner-spin-button {
     top: 57px;
     margin: 0;
   }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .additional .additional__gift {
+    background-image: url("../../img/tablet/catalog/additional-background-tablet2x.png");
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 768px) {
   .additional .additional__gift-title {
     margin-bottom: 69px;
     line-height: 20px;
@@ -2499,13 +2597,24 @@ input::-webkit-inner-spin-button {
     width: 20.0819672131%;
     padding-top: 184px;
     margin-bottom: 0;
-    background-image: url("../../img/desktop/catalog/gift-background.png");
+    background-image: url("../../img/desktop/catalog/gift-background-desktop.png");
     background-size: 245px 289px;
   }
+}
+@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
+  .additional .additional__gift {
+    background-image: url("../../img/desktop/catalog/gift-background-desktop2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 1440px) {
   .additional .additional__gift::before {
     width: 100%;
     height: auto;
   }
+}
+@media (min-width: 1440px) {
   .additional .additional__gift-title {
     width: 161px;
     margin-bottom: 42px;
