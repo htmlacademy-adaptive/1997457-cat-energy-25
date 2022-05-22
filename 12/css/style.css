@@ -276,10 +276,13 @@ input::-webkit-inner-spin-button {
 .main-nav .main-nav__link:hover {
   color: rgba(0, 0, 0, 0.6);
 }
-.main-nav .main-nav__link:active .main-nav__name {
+.main-nav .main-nav__link:active .main-nav__name::after {
+  opacity: 1;
+}
+.main-nav .main-nav__name {
   position: relative;
 }
-.main-nav .main-nav__link:active .main-nav__name::after {
+.main-nav .main-nav__name::after {
   content: "";
   position: absolute;
   top: auto;
@@ -288,6 +291,7 @@ input::-webkit-inner-spin-button {
   bottom: -6px;
   height: 2px;
   background-color: var(--green2);
+  opacity: 0;
 }
 @media (min-width: 768px) {
   .main-nav {
@@ -309,25 +313,8 @@ input::-webkit-inner-spin-button {
     padding: 0;
     width: auto;
   }
-  .main-nav .main-nav__link:active .main-nav__name::after {
-    content: "";
-    position: absolute;
-    top: auto;
-    left: 1.5px;
-    right: 1.5px;
-    bottom: -8px;
-    height: 2px;
-    background-color: var(--green2);
-  }
   .main-nav .main-nav__link--active .main-nav__name::after {
-    content: "";
-    position: absolute;
-    top: auto;
-    left: 1.5px;
-    right: 1.5px;
-    bottom: -8px;
-    height: 2px;
-    background-color: var(--green2);
+    opacity: 1;
   }
   .main-nav .main-nav__index-link {
     margin-right: 33px;
@@ -350,14 +337,13 @@ input::-webkit-inner-spin-button {
   .main-nav .main-nav__link {
     padding: 0;
   }
-  .main-nav .main-nav__link:active .main-nav__name::after {
+  .main-nav .main-nav__link-white.main-nav__link:active .main-nav__name::after {
+    opacity: 1;
     background-color: var(--default-white);
   }
-  .main-nav .main-nav__link--active .main-nav__name::after {
+  .main-nav .main-nav__link-white.main-nav__link--active .main-nav__name::after {
+    opacity: 1;
     background-color: var(--default-white);
-  }
-  .main-nav .main-nav__link.main-nav__link-white {
-    color: var(--default-white);
   }
 }
 
@@ -1017,6 +1003,7 @@ input::-webkit-inner-spin-button {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
+    background-size: contain;
     height: 280px;
     top: 0;
     right: 0;
@@ -1039,13 +1026,12 @@ input::-webkit-inner-spin-button {
 @media (min-width: 768px) {
   .specification .specification__item-function::after {
     background-image: url("../../img/tablet/index/specification-1.png");
+    width: 112px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .specification .specification__item-function::after {
     background-image: url("../../img/tablet/index/specification-1-2x.png");
-    background-size: cover;
-    width: 112px;
     background-repeat: no-repeat;
   }
 }
@@ -1068,13 +1054,12 @@ input::-webkit-inner-spin-button {
 @media (min-width: 768px) {
   .specification .specification__item-structure::after {
     background-image: url("../../img/tablet/index/specification-2.png");
+    width: 134px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .specification .specification__item-structure::after {
     background-image: url("../../img/tablet/index/specification-2-2x.png");
-    background-size: cover;
-    width: 134px;
     background-repeat: no-repeat;
   }
 }
@@ -1097,13 +1082,12 @@ input::-webkit-inner-spin-button {
 @media (min-width: 768px) {
   .specification .specification__item-replace::after {
     background-image: url("../../img/tablet/index/specification-3.png");
+    width: 134px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .specification .specification__item-replace::after {
     background-image: url("../../img/tablet/index/specification-3-2x.png");
-    background-size: cover;
-    width: 134px;
     background-repeat: no-repeat;
   }
 }
@@ -1126,13 +1110,12 @@ input::-webkit-inner-spin-button {
 @media (min-width: 768px) {
   .specification .specification__item-time::after {
     background-image: url("../../img/tablet/index/specification-4.png");
+    width: 136px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .specification .specification__item-time::after {
     background-image: url("../../img/tablet/index/specification-4-2x.png");
-    background-size: cover;
-    width: 136px;
     background-repeat: no-repeat;
   }
 }
@@ -1889,6 +1872,12 @@ input::-webkit-inner-spin-button {
   text-align: center;
   text-transform: uppercase;
 }
+.products .products__button:hover {
+  background-color: var(--green3);
+}
+.products .products__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 .products .products__product-more {
   position: relative;
   display: flex;
@@ -1961,6 +1950,12 @@ input::-webkit-inner-spin-button {
   text-align: center;
   text-transform: uppercase;
   color: var(--black1);
+}
+.products .products__more-button:hover {
+  background-color: var(--grey8);
+}
+.products .products__more-button:active {
+  color: rgba(68, 68, 68, 0.3);
 }
 @media (min-width: 768px) {
   .products {
@@ -2360,13 +2355,18 @@ input::-webkit-inner-spin-button {
   display: block;
   box-sizing: content-box;
   font-size: 16px;
-  line-height: 1;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   min-width: 62px;
-  min-height: 20px;
   padding: 10px 109px;
   margin-bottom: 19px;
+}
+.additional .additional-button:hover {
+  background-color: var(--green3);
+}
+.additional .additional-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 .additional .additional__gift {
   position: relative;
@@ -2710,6 +2710,12 @@ input::-webkit-inner-spin-button {
 .form .form__characteristics-input {
   border: none;
   outline: 2px solid var(--grey6);
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--black1);
+  font-family: var(--main-font);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .form .form__characteristics-input:hover {
   outline: 2px solid var(--grey3);
@@ -2729,11 +2735,17 @@ input::-webkit-inner-spin-button {
   justify-self: end;
   width: 72.8571428571%;
   min-height: 45px;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 .form .form__age {
   justify-self: end;
   width: 61.4285714286%;
   min-height: 45px;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 .form .form__goal {
   margin: 0;
@@ -2746,6 +2758,7 @@ input::-webkit-inner-spin-button {
 }
 .form .form__goal-wrapper {
   display: grid;
+  color: var(--black3);
   font-size: 16px;
   line-height: 18px;
   row-gap: 26px;
@@ -2820,6 +2833,10 @@ input::-webkit-inner-spin-button {
 }
 .form .form__contacts-input {
   border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--black1);
+  font-family: var(--main-font);
 }
 .form .form__contacts-input:hover {
   outline: 2px solid var(--grey3);
@@ -2869,6 +2886,8 @@ input::-webkit-inner-spin-button {
   text-transform: uppercase;
   width: 72.8571428571%;
   min-height: 45px;
+  padding-left: 16px;
+  padding-right: 50px;
 }
 .form .form__tel-text::after {
   right: 13px;
@@ -2906,9 +2925,17 @@ input::-webkit-inner-spin-button {
 .form .form__comments-text {
   width: 100%;
   min-height: 150px;
-  font-size: 24px;
-  line-height: 26px;
-  color: var(--default-black);
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--black1);
+  border: 1px solid var(--grey6);
+  padding-top: 9px;
+  padding-left: 15px;
+  padding-right: 12px;
+  padding-bottom: 9px;
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-family: var(--main-font);
 }
 .form .form__additional {
   position: relative;
@@ -3007,6 +3034,13 @@ input::-webkit-inner-spin-button {
     font-size: 20px;
     line-height: 30px;
   }
+  .form .form__characteristics-input {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--black1);
+    padding-left: 19px;
+    padding-right: 19px;
+  }
   .form .form__name-text {
     width: 53px;
     min-height: 30px;
@@ -3044,6 +3078,8 @@ input::-webkit-inner-spin-button {
     margin-bottom: 75px;
   }
   .form .form__goal-wrapper {
+    font-size: 20px;
+    line-height: 30px;
     padding-left: 87px;
     align-items: center;
     column-gap: 20px;
@@ -3052,7 +3088,7 @@ input::-webkit-inner-spin-button {
   .form .radio {
     width: 40px;
     height: 40px;
-    top: -12.5px;
+    top: -5px;
     left: -60px;
     box-shadow: 0 0 0 1px var(--grey3) inset;
   }
@@ -3084,6 +3120,12 @@ input::-webkit-inner-spin-button {
   }
   .form .form__contacts-content {
     row-gap: 20px;
+  }
+  .form .form__contacts-input {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--black1);
+    padding-left: 21px;
   }
   .form .form__email-text {
     justify-content: space-between;
@@ -3128,8 +3170,15 @@ input::-webkit-inner-spin-button {
     text-transform: none;
   }
   .form .form__comments-text {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--black1);
     width: 100%;
     min-height: 174px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
   }
   .form .form__additional {
     padding-top: 65px;
@@ -3197,19 +3246,30 @@ input::-webkit-inner-spin-button {
   .form .form__name-text {
     width: 50px;
   }
+  .form .form__characteristics-input {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--black1);
+  }
   .form .form__name {
+    padding-left: 20px;
+    padding-right: 20px;
     width: 506px;
   }
   .form .form__weight-text {
     width: 80px;
   }
   .form .form__weight {
+    padding-left: 19px;
+    padding-right: 19px;
     width: 475px;
   }
   .form .form__age-text {
     width: 120px;
   }
   .form .form__age {
+    padding-left: 18px;
+    padding-right: 18px;
     width: 436px;
   }
   .form .form__goal {
@@ -3236,6 +3296,12 @@ input::-webkit-inner-spin-button {
   }
   .form .form__email-text {
     justify-content: flex-start;
+  }
+  .form .form__contacts-input {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--black1);
+    padding-left: 18px;
   }
   .form .form__email {
     margin-bottom: 0;
@@ -3269,6 +3335,9 @@ input::-webkit-inner-spin-button {
     margin-bottom: 76px;
   }
   .form .form__comments-text {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--black1);
     width: 100%;
     min-height: 174px;
   }
