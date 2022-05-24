@@ -469,11 +469,11 @@ input::-webkit-inner-spin-button {
   top: 0;
   width: 100%;
   height: 302px;
-  background-image: url("../../img/mobile/index/motivation-background.jpg");
+  background-image: url("../img/mobile/index/motivation-background.jpg");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .motivation .motivation__decor {
-    background-image: url("../../img/mobile/index/motivation-background2x.jpg");
+    background-image: url("../img/mobile/index/motivation-background2x.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
@@ -541,12 +541,12 @@ input::-webkit-inner-spin-button {
     left: auto;
     width: 720px;
     height: 694px;
-    background-image: url("../../img/desktop/index/motivation-background-desktop.jpg");
+    background-image: url("../img/desktop/index/motivation-background-desktop.jpg");
   }
 }
 @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
   .motivation .motivation__decor {
-    background-image: url("../../img/desktop/index/motivation-background-desktop2x.jpg");
+    background-image: url("../img/desktop/index/motivation-background-desktop2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
@@ -584,7 +584,7 @@ input::-webkit-inner-spin-button {
 .motivation::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/mobile/index/motivation-background-food.png");
+  background-image: url("../img/mobile/index/motivation-background-food.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 280px;
@@ -595,14 +595,14 @@ input::-webkit-inner-spin-button {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .motivation::after {
-    background-image: url("../../img/mobile/index/motivation-background-food2x.png");
-    background-size: 100% auto;
+    background-image: url("../img/mobile/index/motivation-background-food2x.png");
+    background-size: 280px 270px;
     background-repeat: no-repeat;
   }
 }
 @media (min-width: 768px) {
   .motivation::after {
-    background-image: url("../../img/tablet/index/motivation-food-background-tablet.png");
+    background-image: url("../img/tablet/index/motivation-food-background-tablet.png");
     width: 709px;
     height: 609px;
     bottom: 0;
@@ -612,14 +612,14 @@ input::-webkit-inner-spin-button {
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .motivation::after {
-    background-image: url("../../img/tablet/index/motivation-food-background-tablet2x.png");
-    background-size: 100% auto;
+    background-image: url("../img/tablet/index/motivation-food-background-tablet2x.png");
+    background-size: 709px 609px;
     background-repeat: no-repeat;
   }
 }
 @media (min-width: 1440px) {
   .motivation::after {
-    background-image: url("../../img/desktop/index/motivation-food-background-desktop.png");
+    background-image: url("../img/desktop/index/motivation-food-background-desktop.png");
     width: 552px;
     height: 499px;
     top: 32px;
@@ -628,10 +628,10 @@ input::-webkit-inner-spin-button {
     z-index: 1;
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
   .motivation::after {
-    background-image: url("../../img/desktop/index/motivation-food-background-desktop2x.png");
-    background-size: 100% auto;
+    background-image: url("../img/desktop/index/motivation-food-background-desktop2x.png");
+    background-size: 552px 499px;
     background-repeat: no-repeat;
   }
 }
@@ -665,7 +665,7 @@ input::-webkit-inner-spin-button {
 .program .program__item-small::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/mobile/index/program-small-cat.png");
+  background-image: url("../img/mobile/index/program-small-cat.png");
   background-repeat: no-repeat;
   width: 50px;
   height: 53px;
@@ -674,7 +674,7 @@ input::-webkit-inner-spin-button {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .program .program__item-small::before {
-    background-image: url("../../img/mobile/index/program-small-cat2x.png");
+    background-image: url("../img/mobile/index/program-small-cat2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -682,7 +682,7 @@ input::-webkit-inner-spin-button {
 .program .program__item-big::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/mobile/index/program-big-cat.png");
+  background-image: url("../img/mobile/index/program-big-cat.png");
   background-repeat: no-repeat;
   width: 67px;
   height: 50px;
@@ -691,7 +691,7 @@ input::-webkit-inner-spin-button {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .program .program__item-big::before {
-    background-image: url("../../img/mobile/index/program-big-cat2x.png");
+    background-image: url("../img/mobile/index/program-big-cat2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -772,14 +772,14 @@ input::-webkit-inner-spin-button {
     left: auto;
     top: 81px;
     right: 62px;
-    background-image: url("../../img/tablet/index/program-small-cat-tablet.png");
+    background-image: url("../img/tablet/index/program-small-cat-tablet.png");
     width: 200px;
     height: 211px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .program .program__item-small::before {
-    background-image: url("../../img/tablet/index/program-small-cat-tablet2x.png");
+    background-image: url("../img/tablet/index/program-small-cat-tablet2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -789,14 +789,14 @@ input::-webkit-inner-spin-button {
     left: auto;
     top: 91px;
     right: 28px;
-    background-image: url("../../img/tablet/index/program-big-cat-tablet.png");
+    background-image: url("../img/tablet/index/program-big-cat-tablet.png");
     width: 268px;
     height: 200px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .program .program__item-big::before {
-    background-image: url("../../img/tablet/index/program-big-cat-tablet2x.png");
+    background-image: url("../img/tablet/index/program-big-cat-tablet2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -835,7 +835,7 @@ input::-webkit-inner-spin-button {
   .program .program__list-link::after {
     content: "";
     position: absolute;
-    background-image: url("../../img/mobile/index/program-arrow.png");
+    background-image: url("../img/mobile/index/program-arrow.png");
     background-repeat: no-repeat;
     width: 24px;
     height: 12px;
@@ -863,14 +863,14 @@ input::-webkit-inner-spin-button {
     left: 51px;
     top: 41px;
     right: auto;
-    background-image: url("../../img/desktop/index/program-small-cat-desktop.png");
+    background-image: url("../img/desktop/index/program-small-cat-desktop.png");
     width: 100px;
     height: 106px;
   }
 }
 @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
   .program .program__item-small::before {
-    background-image: url("../../img/desktop/index/program-small-cat-desktop2x.png");
+    background-image: url("../img/desktop/index/program-small-cat-desktop2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -880,14 +880,14 @@ input::-webkit-inner-spin-button {
     left: 33px;
     top: 47px;
     right: auto;
-    background-image: url("../../img/desktop/index/program-big-cat-desktop.png");
+    background-image: url("../img/desktop/index/program-big-cat-desktop.png");
     width: 134px;
     height: 100px;
   }
 }
 @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
   .program .program__item-big::before {
-    background-image: url("../../img/desktop/index/program-big-cat-desktop2x.png");
+    background-image: url("../img/desktop/index/program-big-cat-desktop2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -959,41 +959,41 @@ input::-webkit-inner-spin-button {
   left: 0;
 }
 .specification .specification__item-function::before {
-  background-image: url("../../img/mobile/index/specification-function.png");
+  background-image: url("../img/mobile/index/specification-function.png");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .specification .specification__item-function::before {
-    background-image: url("../../img/mobile/index/specification-function2x.png");
+    background-image: url("../img/mobile/index/specification-function2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 .specification .specification__item-structure::before {
-  background-image: url("../../img/mobile/index/specification-structure.png");
+  background-image: url("../img/mobile/index/specification-structure.png");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .specification .specification__item-structure::before {
-    background-image: url("../../img/mobile/index/specification-structure2x.png");
+    background-image: url("../img/mobile/index/specification-structure2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 .specification .specification__item-replace::before {
-  background-image: url("../../img/mobile/index/specification-replace.png");
+  background-image: url("../img/mobile/index/specification-replace.png");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .specification .specification__item-replace::before {
-    background-image: url("../../img/mobile/index/specification-replace2x.png");
+    background-image: url("../img/mobile/index/specification-replace2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 .specification .specification__item-time::before {
-  background-image: url("../../img/mobile/index/specification-time.png");
+  background-image: url("../img/mobile/index/specification-time.png");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .specification .specification__item-time::before {
-    background-image: url("../../img/mobile/index/specification-time2x.png");
+    background-image: url("../img/mobile/index/specification-time2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -1055,25 +1055,25 @@ input::-webkit-inner-spin-button {
     width: 230px;
   }
   .specification .specification__item-function::before {
-    background-image: url("../../img/tablet/index/specification-function-tablet.png");
+    background-image: url("../img/tablet/index/specification-function-tablet.png");
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .specification .specification__item-function::before {
-    background-image: url("../../img/tablet/index/specification-function-tablet2x.png");
+    background-image: url("../img/tablet/index/specification-function-tablet2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 @media (min-width: 768px) {
   .specification .specification__item-function::after {
-    background-image: url("../../img/tablet/index/specification-1.png");
+    background-image: url("../img/tablet/index/specification-1.png");
     width: 112px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .specification .specification__item-function::after {
-    background-image: url("../../img/tablet/index/specification-1-2x.png");
+    background-image: url("../img/tablet/index/specification-1-2x.png");
     background-repeat: no-repeat;
   }
 }
@@ -1083,25 +1083,25 @@ input::-webkit-inner-spin-button {
     width: 246px;
   }
   .specification .specification__item-structure::before {
-    background-image: url("../../img/tablet/index/specification-structure-tablet.png");
+    background-image: url("../img/tablet/index/specification-structure-tablet.png");
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .specification .specification__item-structure::before {
-    background-image: url("../../img/tablet/index/specification-structure-tablet2x.png");
+    background-image: url("../img/tablet/index/specification-structure-tablet2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 @media (min-width: 768px) {
   .specification .specification__item-structure::after {
-    background-image: url("../../img/tablet/index/specification-2.png");
+    background-image: url("../img/tablet/index/specification-2.png");
     width: 134px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .specification .specification__item-structure::after {
-    background-image: url("../../img/tablet/index/specification-2-2x.png");
+    background-image: url("../img/tablet/index/specification-2-2x.png");
     background-repeat: no-repeat;
   }
 }
@@ -1111,25 +1111,25 @@ input::-webkit-inner-spin-button {
     width: 247px;
   }
   .specification .specification__item-replace::before {
-    background-image: url("../../img/tablet/index/specification-replace-tablet.png");
+    background-image: url("../img/tablet/index/specification-replace-tablet.png");
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .specification .specification__item-replace::before {
-    background-image: url("../../img/tablet/index/specification-replace-tablet2x.png");
+    background-image: url("../img/tablet/index/specification-replace-tablet2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 @media (min-width: 768px) {
   .specification .specification__item-replace::after {
-    background-image: url("../../img/tablet/index/specification-3.png");
+    background-image: url("../img/tablet/index/specification-3.png");
     width: 134px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .specification .specification__item-replace::after {
-    background-image: url("../../img/tablet/index/specification-3-2x.png");
+    background-image: url("../img/tablet/index/specification-3-2x.png");
     background-repeat: no-repeat;
   }
 }
@@ -1139,25 +1139,25 @@ input::-webkit-inner-spin-button {
     width: 249px;
   }
   .specification .specification__item-time::before {
-    background-image: url("../../img/tablet/index/specification-time-tablet.png");
+    background-image: url("../img/tablet/index/specification-time-tablet.png");
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .specification .specification__item-time::before {
-    background-image: url("../../img/tablet/index/specification-time-tablet2x.png");
+    background-image: url("../img/tablet/index/specification-time-tablet2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 @media (min-width: 768px) {
   .specification .specification__item-time::after {
-    background-image: url("../../img/tablet/index/specification-4.png");
+    background-image: url("../img/tablet/index/specification-4.png");
     width: 136px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .specification .specification__item-time::after {
-    background-image: url("../../img/tablet/index/specification-4-2x.png");
+    background-image: url("../img/tablet/index/specification-4-2x.png");
     background-repeat: no-repeat;
   }
 }
@@ -2431,7 +2431,7 @@ input::-webkit-inner-spin-button {
 .additional .additional__gift {
   position: relative;
   z-index: 0;
-  background-image: url("../../img/mobile/catalog/additional-background.webp");
+  background-image: url("../img/mobile/catalog/additional-background.webp");
   background-repeat: no-repeat;
   width: 280px;
   padding-top: 187px;
@@ -2457,7 +2457,7 @@ input::-webkit-inner-spin-button {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .additional .additional__gift {
-    background-image: url("../../img/mobile/catalog/additional-background2x.webp");
+    background-image: url("../img/mobile/catalog/additional-background2x.webp");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -2550,7 +2550,7 @@ input::-webkit-inner-spin-button {
     padding: 7px 220px;
   }
   .additional .additional__gift {
-    background-image: url("../../img/tablet/catalog/additional-background-tablet.webp");
+    background-image: url("../img/tablet/catalog/additional-background-tablet.webp");
     background-size: 707px 200px;
     margin: 0;
     width: 100%;
@@ -2570,7 +2570,7 @@ input::-webkit-inner-spin-button {
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .additional .additional__gift {
-    background-image: url("../../img/tablet/catalog/additional-background-tablet2x.webp");
+    background-image: url("../img/tablet/catalog/additional-background-tablet2x.webp");
     background-repeat: no-repeat;
   }
 }
@@ -2656,13 +2656,13 @@ input::-webkit-inner-spin-button {
     width: 20.0819672131%;
     padding-top: 184px;
     margin-bottom: 0;
-    background-image: url("../../img/desktop/catalog/gift-background-desktop.webp");
+    background-image: url("../img/desktop/catalog/gift-background-desktop.webp");
     background-size: 245px 289px;
   }
 }
 @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
   .additional .additional__gift {
-    background-image: url("../../img/desktop/catalog/gift-background-desktop2x.webp");
+    background-image: url("../img/desktop/catalog/gift-background-desktop2x.webp");
     background-size: cover;
     background-repeat: no-repeat;
   }
