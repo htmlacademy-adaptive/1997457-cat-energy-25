@@ -1610,6 +1610,10 @@ input::-webkit-inner-spin-button {
     line-height: 20px;
     text-align: right;
   }
+  .invite-description .invite-description__address span {
+    display: block;
+    margin-top: 20px;
+  }
 }
 @media (min-width: 768px) {
   .invite-description {
@@ -1623,6 +1627,9 @@ input::-webkit-inner-spin-button {
     padding: 56px 80px;
     width: 565px;
     min-height: 198px;
+  }
+  .invite-description .invite-description__address {
+    text-align: left;
   }
 }
 
